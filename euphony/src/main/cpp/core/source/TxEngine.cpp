@@ -174,6 +174,9 @@ public:
             default:
                 mModulationType = ModulationType::FSK;
                 break;
+            case 1:
+                mModulationType = ModulationType::ASK;
+                break;
         }
 
         mModem = ModemFactory::create(mModulationType);
